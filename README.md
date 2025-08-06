@@ -7,7 +7,6 @@ This repository provides a tool to upload files, URLs, or hashes and check their
 - Upload a file, URL, or hash to query VirusTotal's database for reported threats.
 - Retrieves comprehensive scanning reports from multiple antivirus engines and security tools.
 - Helps security researchers and system administrators quickly validate file or URL safety.
-- Includes shell and Python scripts to facilitate automated checks.
 - Designed for ease of use with minimal configuration required.
 
 ## Features
