@@ -19,7 +19,7 @@ This repository provides a tool to upload files, URLs, or hashes and check their
 
 ## Requirements
 
-- Python 3.x
+- Powershell 5 or later
 - `requests` library (or other HTTP client libraries, depending on implementation)
 - A valid VirusTotal API key (obtainable from [VirusTotal website](https://www.virustotal.com/))
 - Internet connection to access VirusTotal API endpoints
@@ -31,23 +31,11 @@ This repository provides a tool to upload files, URLs, or hashes and check their
 3. Retrieve and review the scan report returned from VirusTotal.
 4. Automate the process by integrating these scripts into your security scanning workflows.
 
-## Example
-
-```
-# Upload a file and get the report (example script usage)
-./fileCheck.sh /path/to/file
-
-# Query a URL report
-./urlCheck.sh https://example.com
-```
-
 ## Project Structure
 
 ```
 /virusTotal-fileCheck
-├── fileCheck.sh         # Shell script to upload files and fetch reports
-├── urlCheck.sh          # Shell script to check URL reports
-├── vt_api.py            # Python script wrapping VirusTotal API calls
+├── hashVerify.ps1       # Powershell script
 ├── README.md            # This README file
 ├── LICENSE              # GPLv3 License file
 └── .env.example         # Example environment file to store API key securely
